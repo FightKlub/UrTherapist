@@ -1,0 +1,139 @@
+ /* .auth{
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid #dcdcdc;
+  padding: 20px;
+  text-align: center;
+}
+
+.auth form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 auto 10px auto;
+}
+
+.auth__success{
+  padding: 10px 0;
+  background-color: hsl(147, 79%, 87%);
+  margin-bottom: 20px;
+}
+
+.auth__error{
+  padding: 10px 0;
+  background-color: hsl(0, 79%, 87%);
+  margin-bottom: 20px;
+}
+
+.auth form > input, button{
+  height: 40px;
+  font-size: 16px;
+  padding: 0 10px;
+}  */
+
+
+/* Main container */
+.auth {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  padding: 25px;
+  text-align: center;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Glass effect */
+  backdrop-filter: blur(12px); /* Frosted glass effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(38, 38, 39, 0.485);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.auth:hover {
+  transform: translateY(-5px);
+}
+
+/* Form Styling */
+.auth form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+/* Success & Error Messages */
+.auth__success,
+.auth__error {
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.auth__success {
+  background: linear-gradient(135deg, hsl(147, 79%, 67%), hsl(147, 79%, 87%));
+  color: hsl(147, 30%, 20%);
+  border-left: 6px solid hsl(147, 60%, 40%);
+  box-shadow: 0 4px 10px rgba(0, 255, 127, 0.3);
+}
+
+.auth__error {
+  background: linear-gradient(135deg, hsl(0, 79%, 67%), hsl(0, 79%, 87%));
+  color: hsl(0, 50%, 20%);
+  border-left: 6px solid hsl(0, 60%, 40%);
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+}
+
+/* Input and Button Styles */
+.auth form > input, 
+.auth form > button {
+  height: 44px;
+  font-size: 16px;
+  padding: 0 14px;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input fields */
+.auth form > input {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgba(18, 94, 174, 0.6);
+}
+
+.auth form > input:focus {
+  border-color: hsl(220, 80%, 60%);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+/* Submit Button */
+.auth form > button {
+  background: linear-gradient(135deg, hsl(220, 80%, 60%), hsl(220, 80%, 40%));
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Button hover effect */
+.auth form > button:hover {
+  background: linear-gradient(135deg, hsl(220, 80%, 70%), hsl(220, 80%, 50%));
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* Button click effect */
+.auth form > button:active {
+  transform: scale(0.98);
+}
+
+/* Placeholder Styling */
+.auth form > input::placeholder {
+  color: rgba(33, 32, 32, 0.483);
+}
+
